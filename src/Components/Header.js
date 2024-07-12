@@ -58,15 +58,7 @@ const Header = () => {
   };
 
   return (
-<<<<<<< HEAD
-<<<<<<< HEAD
     <div className="flex absolute justify-between w-full px-8 py-2 bg-gradient-to-b from-black z-10 bg-black sm:bg-blue-900 md:bg-green-900">
-=======
-    <div className="flex absolute justify-between w-full px-8 py-2 bg-gradient-to-b from-black z-10">
->>>>>>> e9f1b6994b25304dcfc715833fb898c538f4ec5e
-=======
-    <div className="flex absolute justify-between w-full px-8 py-2 bg-gradient-to-b from-black z-10">
->>>>>>> origin/main
       <img className="w-44" src={LOGO} alt="logo" />
       {user && (
         <div className="flex p-2 ">
