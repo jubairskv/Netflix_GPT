@@ -90,11 +90,11 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src={BG_URL} alt="logo" />
+        <img className="h-screen w-screen object-cover" src={BG_URL} alt="logo" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute p-12 bg-black w-3/12 my-36  mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
+        className="absolute p-12 bg-black w-full md:w-3/12 md:my-[5%] my-32 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80"
       >
         <h1 className="font-bold text-3xl py-4 ">
           {isSignInForm ? "Sign In" : "Sign Up"}
@@ -127,11 +127,11 @@ const Login = () => {
         >
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
-        <h1 className="ml-32">OR</h1>
+        {/* <h1 className="ml-32">OR</h1>
         <button className="p-4 my-6 bg-gray-500 w-full rounded-lg">
           Use a sign-in code
         </button>
-        <button className="w-full rounded-lg">Forgot password?</button>
+        <button className="w-full rounded-lg">Forgot password?</button> */}
         <p className="py-4" onClick={toggleSignInForm}>
           {isSignInForm
             ? "New to Netflix? Sign Up Now"
