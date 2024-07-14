@@ -1,4 +1,3 @@
-
 import { API_OPTIONS } from "../Utils/constant";
 import { useDispatch, useSelector } from "react-redux";
 import { addNowPlayingMovies } from "../Utils/movieSlice";
@@ -21,7 +20,7 @@ const useNowPlayingMovies = () => {
   };
 
   useEffect(() => {
-   // if (!nowPlayingMovies) getNowPlayingMovies();
+    // if (!nowPlayingMovies) getNowPlayingMovies();
     !nowPlayingMovies && getNowPlayingMovies();
   }, []);
 };
