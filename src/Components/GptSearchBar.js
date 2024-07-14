@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import lang from "../Utils/languageConstants";
 import { useDispatch, useSelector } from "react-redux";
@@ -55,7 +54,9 @@ const GptSearchBar = () => {
     const tmdbResults = await Promise.all(promiseArray); //when all promiseArray data is resolved then only i get the data from tmdbResults
     console.log(tmdbResults);
 
-    dispatch(addGptMovieResult({movieName:gptMovies , movieResults:tmdbResults}))
+    dispatch(
+      addGptMovieResult({ movieName: gptMovies, movieResults: tmdbResults })
+    );
   };
 
   return (
@@ -73,7 +74,8 @@ const GptSearchBar = () => {
         <button
           className="py-2 px-4 m-4 col-span-3 bg-red-700 text-white rounded-lg"
           onClick={handleGptSearchClick}
-        >{lang[langKey].search}
+        >
+          {lang[langKey].search}
         </button>
       </form>
     </div>

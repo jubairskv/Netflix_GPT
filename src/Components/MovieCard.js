@@ -1,6 +1,5 @@
-import React from 'react'
-import { IMG_CDN_URL } from '../Utils/constant'
-
+import React from "react";
+import { IMG_CDN_URL } from "../Utils/constant";
 
 const MovieCard = ({ posterPath }) => {
   if (!posterPath) return null;
