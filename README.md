@@ -40,7 +40,15 @@
   -GPT search page
   -GPT search bar
   -(IMPORTANT FUNCTIONALITY) multi-language feature in our App
-  -
+  -Get GPT Serach openai APi key
+  -GPT Search API call
+  -fetched GPT Movie suggestion from TMDB database api
+  -created GPTSlice added data
+  -Reused movie list componet to make movie suggestion container
+  -memoization
+  -Added .env file 
+  -adding .env file to gitignore
+  -we made our site responsive
 
 
 # Features
