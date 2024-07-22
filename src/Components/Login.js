@@ -26,7 +26,7 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
 
-  const HandleButtonClick = () => {
+  const handleButtonClick = () => {
     //console.log(email.current.value)
     //console.log(password.current.value)
     const message = checkValidData(email.current.value, password.current.value);
@@ -127,7 +127,7 @@ const Login = () => {
         <p className="text-red-500 font-bold text-lg p-2">{errorMessage}</p>
         <button
           className="p-4 my-6 bg-red-700 w-full rounded-lg"
-          onClick={HandleButtonClick}
+          onClick={handleButtonClick}
         >
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
