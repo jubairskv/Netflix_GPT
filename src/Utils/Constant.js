@@ -24,3 +24,5 @@ export const SUPPORTED_LANGUAGE = [
 ];
 
 export const OPEN_API_KEY = process.env.REACT_APP_OPEN_API_KEY;
+
+export const GEMINI_API_KEY =  process.env.REACT_APP_GEMINI_API_KEY;
